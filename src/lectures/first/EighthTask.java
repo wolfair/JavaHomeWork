@@ -5,25 +5,9 @@ import java.util.Scanner;
 
 public class EighthTask {
 
-    public EighthTask() {
-
-        System.out.println("Enter int ASCII codes for Eighth Task:\n(enter invalid ASCII code to finish input process)\n");
-        Scanner userInput = new Scanner(System.in);
-        ArrayList<Integer> variables = new ArrayList<>();
-        while (userInput.hasNextInt()) {
-            int variable = userInput.nextInt();
-            variables.add(variable);
-        }
-        for (int variable : variables) {
-            printList(transformIntToChar(variable));
-            System.out.print("\n");
-        }
-    }
-
+    // Переделать
     public static void main(String[] args) {
-
-         new EighthTask();
-
+        System.out.println("To be done...");
     }
 
     private static ArrayList<Character> transformIntToChar(int... values) {

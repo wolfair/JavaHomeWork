@@ -2,22 +2,15 @@ package lectures.first;
 
 public class ThirdTask {
 
-    int a;
-    int b;
+    private static int a;
+    private static int b;
 
-    public ThirdTask() {
-
-        this.a = 33;
-        this.b = 47;
+    public static void main(String[] args) {
+        a = 33;
+        b = 47;
 
         int squareOfRectangle = a * b;
-        System.out. println(String.format("Square for rectangle with sides %d and %d equals:", this.a, this.b));
+        System.out. println(String.format("Square for rectangle with sides %d and %d equals:", a, b));
         System.out.println(squareOfRectangle);
-    }
-
-    public void main(String[] args) {
-
-        new ThirdTask();
-
     }
 }
