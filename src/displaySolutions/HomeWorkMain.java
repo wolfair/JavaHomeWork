@@ -4,8 +4,14 @@ import java.util.Scanner;
 
 public class HomeWorkMain {
 
+    static Scanner userInput = new Scanner(System.in);
+
     public HomeWorkMain() {
-        Scanner userInput = new Scanner(System.in);
+
+
+    }
+
+    public static void main(String[] args) {
 
         while (true) {
 
@@ -125,11 +131,6 @@ public class HomeWorkMain {
                     break;
             }
         }
-    }
-
-    public static void main(String[] args) {
-
-        new HomeWorkMain();
 
     }
 }
