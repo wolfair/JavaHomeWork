@@ -1,16 +1,17 @@
 package lectures.first;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class EighthTask {
 
-    static List<Integer> output = new ArrayList<>(Arrays.asList(72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100));
+    static List<Integer> intCodeList = new ArrayList<>();
+    static String predefinedString;
 
 
     public EighthTask() {
 
+        predefinedString = "Hello World";
         System.out.println("\n---------------------");
         System.out.println("Eighth task solution:\n");
 
@@ -18,7 +19,18 @@ public class EighthTask {
 
     public static void main(String[] args) {
 
-        for (int symbol : output) {
+        //changing desired intCodeList to convertible type
+        char[] temp = predefinedString.toCharArray();
+
+        //converting char array to int array of ASCII codes
+        for (char ch : temp) {
+
+            intCodeList.add((int) ch);
+
+        }
+
+        //printing our input using predefined methods
+        for (int symbol : intCodeList) {
 
             printList(transformIntToChar(symbol));
 
