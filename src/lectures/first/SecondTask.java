@@ -2,13 +2,9 @@ package lectures.first;
 
 public class SecondTask {
 
-    public SecondTask() {
-
+    public static void showSolution() {
         System.out.println("\n---------------------");
         System.out.println("Second task solution:\n");
-
-    }
-    public static void main(String[] args) {
 
         int integerVariable = Integer.MAX_VALUE;
         short shortVariable = Short.MAX_VALUE;

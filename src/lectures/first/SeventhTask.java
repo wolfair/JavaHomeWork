@@ -20,14 +20,9 @@ public class SeventhTask {
             "}"
     };
 
-    public SeventhTask() {
-
+    public static void showSolution() {
         System.out.println("\n---------------------");
         System.out.println("Seventh task solution:\n");
-
-    }
-
-    public static void main(String[] args) {
 
         for (String s : result) System.out.println(s);
 

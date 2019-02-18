@@ -2,14 +2,11 @@ package displaySolutions;
 
 import java.util.Scanner;
 
+import lectures.first.*;
+
 public class HomeWorkMain {
 
-    static Scanner userInput = new Scanner(System.in);
-
-    public HomeWorkMain() {
-
-
-    }
+    private static Scanner userInput = new Scanner(System.in);
 
     public static void main(String[] args) {
 
@@ -24,30 +21,7 @@ public class HomeWorkMain {
 
                 case "1":
                     System.out.println("Displaying all solutions for the first lecture.\n");
-                    new lectures.first.FirstTask();
-                    lectures.first.FirstTask.main(null);
-
-                    new lectures.first.SecondTask();
-                    lectures.first.SecondTask.main(null);
-
-                    new lectures.first.ThirdTask();
-                    lectures.first.ThirdTask.main(null);
-
-
-                    new lectures.first.FourthTask();
-                    lectures.first.FourthTask.main(null);
-
-                    new lectures.first.FifthTask();
-                    lectures.first.FifthTask.main(null);
-
-                    new lectures.first.SixthTask();
-                    lectures.first.SixthTask.main(null);
-
-                    new lectures.first.SeventhTask();
-                    lectures.first.SeventhTask.main(null);
-
-                    new lectures.first.EighthTask();
-                    lectures.first.EighthTask.main(null);
+                    showFirstLectureSolutions();
                     break;
 
                 case "2":
@@ -131,6 +105,17 @@ public class HomeWorkMain {
                     break;
             }
         }
+    }
 
+
+    private static void showFirstLectureSolutions() {
+        FirstTask.showSolution();
+        SecondTask.showSolution();
+        ThirdTask.showSolution();
+        FourthTask.showSolution();
+        FifthTask.showSolution();
+        SixthTask.showSolution();
+        SeventhTask.showSolution();
+        EighthTask.showSolution();
     }
 }

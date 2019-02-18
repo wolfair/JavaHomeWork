@@ -2,14 +2,9 @@ package lectures.first;
 
 public class FirstTask {
 
-    public FirstTask() {
-
+    public static void showSolution() {
         System.out.println("\n---------------------");
         System.out.println("First task solution:\n");
-
-    }
-
-    public static void main(String[] args) {
 
         int i = 5;
         String someString = "Some string";
@@ -17,6 +12,5 @@ public class FirstTask {
             System.out.println(someString);
             i -= 1;
         }
-
-        }
+    }
 }
