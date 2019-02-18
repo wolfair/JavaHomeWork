@@ -1,28 +1,28 @@
 package lectures.first;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.List;
 
 public class EighthTask {
 
+    static List<Integer> output = new ArrayList<>(Arrays.asList(72, 101, 108, 108, 111, 32, 119, 111, 114, 108, 100));
+
+
     public EighthTask() {
 
-        System.out.println("Enter int ASCII codes for Eighth Task:\n(enter invalid ASCII code to finish input process)\n");
-        Scanner userInput = new Scanner(System.in);
-        ArrayList<Integer> variables = new ArrayList<>();
-        while (userInput.hasNextInt()) {
-            int variable = userInput.nextInt();
-            variables.add(variable);
-        }
-        for (int variable : variables) {
-            printList(transformIntToChar(variable));
-            System.out.print("\n");
-        }
+        System.out.println("\n---------------------");
+        System.out.println("Eighth task solution:\n");
+
     }
 
     public static void main(String[] args) {
 
-         new EighthTask();
+        for (int symbol : output) {
+
+            printList(transformIntToChar(symbol));
+
+        }
 
     }
 

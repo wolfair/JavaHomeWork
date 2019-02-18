@@ -2,21 +2,23 @@ package lectures.first;
 
 public class FifthTask {
 
-    public static int a = 1;
-    public static int b = 3;
-    public static int c = 9;
-    public static int d = 27;
+    static int a, b, c, d, result;
 
     public FifthTask() {
 
-        int result = - a + b - c + d;
-        System.out.println(result);
+        a = 1;
+        b = 3;
+        c = 9;
+        d = 27;
+        System.out.println("\n---------------------");
+        System.out.println("Fifth task solution:\n");
 
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        new FifthTask();
+        result = - a + b - c + d;
+        System.out.println(result);
 
     }
 }
