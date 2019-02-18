@@ -2,20 +2,23 @@ package lectures.first;
 
 public class FourthTask {
 
-    public static int a = 5;
-    public static float b = 10;
+    static int a;
+    static float b;
+    static float result;
 
     public FourthTask() {
 
-        float result = a / b;
-
-        System.out.println(result);
+        a = 5;
+        b = 10;
+        System.out.println("\n---------------------");
+        System.out.println("Fourth task solution:\n");
 
     }
 
-    public void main (String[] args) {
+    public static void main (String[] args) {
 
-        new FourthTask();
+        result = a / b;
+        System.out.println(result);
 
     }
 }

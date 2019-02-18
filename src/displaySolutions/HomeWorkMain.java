@@ -1,73 +1,128 @@
 package displaySolutions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class HomeWorkMain {
 
-    ArrayList<String> numbers = new ArrayList<>(Arrays.asList("first", "one", "1"));
-    String lectureNumber;
-
     public HomeWorkMain() {
-
-        System.out.println("Enter lecture's number:\n");
         Scanner userInput = new Scanner(System.in);
-        lectureNumber = userInput.nextLine();
 
-        while (numbers.contains(lectureNumber)) {
+        while (true) {
 
-            if (Arrays.asList("first", "one", "1").contains(lectureNumber)) {
-                System.out.println("\n---------------------");
-                System.out.println("First task solution:\n");
-                new lectures.first.FirstTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+            System.out.println("\nEnter lecture's number (1 to 20), enter 0 to exit the program:\n");
+            String lectureNumber = userInput.nextLine();
+            switch (lectureNumber) {
+                case "0":
+                    System.out.println("Have a nice day!");
+                    return;
 
-                System.out.println("\n---------------------");
-                System.out.println("Second task solution:\n");
-                new lectures.first.SecondTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                case "1":
+                    System.out.println("Displaying all solutions for the first lecture.\n");
+                    new lectures.first.FirstTask();
+                    lectures.first.FirstTask.main(null);
 
-                System.out.println("\n---------------------");
-                System.out.println("Third task solution:\n");
-                new lectures.first.ThirdTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                    new lectures.first.SecondTask();
+                    lectures.first.SecondTask.main(null);
 
-                System.out.println("\n---------------------");
-                System.out.println("Fourth task solution:\n");
-                new lectures.first.FourthTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                    new lectures.first.ThirdTask();
+                    lectures.first.ThirdTask.main(null);
 
-                System.out.println("\n---------------------");
-                System.out.println("Fifth task solution:\n");
-                new lectures.first.FifthTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
 
-                System.out.println("\n---------------------");
-                System.out.println("Sixth task solution:\n");
-                new lectures.first.SixthTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                    new lectures.first.FourthTask();
+                    lectures.first.FourthTask.main(null);
 
-                System.out.println("\n---------------------");
-                System.out.println("Seventh task solution:\n");
-                new lectures.first.SeventhTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                    new lectures.first.FifthTask();
+                    lectures.first.FifthTask.main(null);
 
-                System.out.println("\n---------------------");
-                System.out.println("Eighth task solution:\n");
-                new lectures.first.EighthTask();
-                System.out.println("\nHit return to continue...");
-                userInput.nextLine();
+                    new lectures.first.SixthTask();
+                    lectures.first.SixthTask.main(null);
 
-                System.out.println("Enter lecture's number to repeat or hit Return to exit.");
-                lectureNumber = userInput.nextLine();
+                    new lectures.first.SeventhTask();
+                    lectures.first.SeventhTask.main(null);
+
+                    new lectures.first.EighthTask();
+                    lectures.first.EighthTask.main(null);
+                    break;
+
+                case "2":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "3":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "4":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "5":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "6":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "7":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "8":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "9":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "10":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "11":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "12":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "13":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "14":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "15":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "16":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "17":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "18":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "19":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                case "20":
+                    System.out.println("This lecture wasn't implemented yet.");
+                    break;
+
+                default:
+                    System.out.println("Invalid lecture number!");
+                    break;
             }
         }
     }

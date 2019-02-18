@@ -4,6 +4,12 @@ public class SecondTask {
 
     public SecondTask() {
 
+        System.out.println("\n---------------------");
+        System.out.println("Second task solution:\n");
+
+    }
+    public static void main(String[] args) {
+
         int integerVariable = Integer.MAX_VALUE;
         short shortVariable = Short.MAX_VALUE;
         long longVariable = Long.MAX_VALUE;
@@ -21,11 +27,6 @@ public class SecondTask {
         System.out.println(doubleVariable);
         System.out.println(booleanVariable);
         System.out.println(charVariable);
-
-    }
-    public void main(String[] args) {
-
-        new lectures.first.SecondTask();
 
     }
 }

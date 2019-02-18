@@ -2,22 +2,23 @@ package lectures.first;
 
 public class ThirdTask {
 
-    int a;
-    int b;
+    static int a;
+    static int b;
 
     public ThirdTask() {
 
-        this.a = 33;
-        this.b = 47;
+        a = 33;
+        b = 47;
+        System.out.println("\n---------------------");
+        System.out.println("Third task solution:\n");
 
-        int squareOfRectangle = a * b;
-        System.out. println(String.format("Square for rectangle with sides %d and %d equals:", this.a, this.b));
-        System.out.println(squareOfRectangle);
     }
 
-    public void main(String[] args) {
+    public static void main(String[] args) {
 
-        new ThirdTask();
+        int squareOfRectangle = a * b;
+        System.out. println(String.format("Square for rectangle with sides %d and %d equals:", a, b));
+        System.out.println(squareOfRectangle);
 
     }
 }
