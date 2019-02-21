@@ -50,7 +50,7 @@ public class HomeWorkMain {
                     break;
 
                 case "2":
-                    System.out.println("This lecture wasn't implemented yet.");
+                    lectures.second.HelloWorld.main(null);
                     break;
 
                 case "3":
