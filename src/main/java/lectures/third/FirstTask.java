@@ -19,7 +19,7 @@ public class FirstTask {
         while(i <= 20) {
 
             System.out.println(i);
-            i += 1;
+            i++;
         }
 
         i = 10;
@@ -27,7 +27,7 @@ public class FirstTask {
         do {
 
             System.out.println(i);
-            i += 1;
+            i++;
         } while (i < 20);
 
         System.out.println("\nFOR Loop:");
