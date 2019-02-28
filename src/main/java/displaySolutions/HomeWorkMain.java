@@ -54,7 +54,30 @@ public class HomeWorkMain {
                     break;
 
                 case "3":
-                    System.out.println("This lecture wasn't implemented yet.");
+                    System.out.println("Displaying all solutions for the third lecture.\n");
+                    new lectures.third.FirstTask();
+                    lectures.third.FirstTask.main(null);
+
+                    new lectures.third.SecondTask();
+                    lectures.third.SecondTask.main(null);
+
+                    new lectures.third.ThirdTask();
+                    lectures.third.ThirdTask.main(null);
+
+                    new lectures.third.FourthTask();
+                    lectures.third.FourthTask.main(null);
+
+                    new lectures.third.FifthTask();
+                    lectures.third.FifthTask.main(null);
+
+                    new lectures.third.SixthTask();
+                    lectures.third.SixthTask.main(null);
+
+                    new lectures.third.SeventhTask();
+                    lectures.third.SeventhTask.main(null);
+
+                    new lectures.third.EighthToEleventhTask();
+                    lectures.third.EighthToEleventhTask.main(null);
                     break;
 
                 case "4":
