@@ -31,7 +31,7 @@ public class FifthTask {
                 continue;
             }
 
-            i += 1;
+            i++;
         }
 
         int result = min(values[0], values[1], values[2], values[3]);
