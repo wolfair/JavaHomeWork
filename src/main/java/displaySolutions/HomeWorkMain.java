@@ -17,7 +17,9 @@ public class HomeWorkMain {
 
             System.out.println("\nEnter lecture's number (1 to 20), enter 0 to exit the program:\n");
             String lectureNumber = userInput.nextLine();
+
             switch (lectureNumber) {
+
                 case "0":
                     System.out.println("Have a nice day!");
                     return;
@@ -93,6 +95,24 @@ public class HomeWorkMain {
 
                     new lectures.fourth.FourthTask();
                     lectures.fourth.FourthTask.main(null);
+
+                    new lectures.fourth.FifthTask();
+                    lectures.fourth.FifthTask.main(null);
+
+                    new lectures.fourth.SixthTask();
+                    lectures.fourth.SixthTask.main(null);
+
+                    new lectures.fourth.SeventhTask();
+                    lectures.fourth.SeventhTask.main(null);
+
+                    new lectures.fourth.EighthTask();
+                    lectures.fourth.EighthTask.main(null);
+
+                    new lectures.fourth.NinthTask();
+                    lectures.fourth.NinthTask.main(null);
+
+                    new lectures.fourth.TenthTask();
+                    lectures.fourth.TenthTask.main(null);
                     break;
 
                 case "5":
@@ -161,7 +181,6 @@ public class HomeWorkMain {
 
                 default:
                     System.out.println("Invalid lecture number!");
-                    break;
             }
         }
 
