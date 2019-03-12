@@ -26,7 +26,7 @@ public class SixthTask {
         }
 
         a = initialList.get(0).length();
-        for(int i = 1; i < initialList.size() - 1; i++){
+        for(int i = 1; i < initialList.size(); i++){
 
             b = initialList.get(i).length();
             a = (a > b ? a : b);
