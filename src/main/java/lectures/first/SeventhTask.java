@@ -21,16 +21,12 @@ public class SeventhTask {
     };
 
     public SeventhTask() {
-
         System.out.println("\n---------------------");
         System.out.println("Seventh task solution:\n");
-
     }
 
     public static void main(String[] args) {
-
         for (String s : result) System.out.println(s);
-
         System.out.println("\nObligatory code check:");
         int a = 10;
         int b = 15;

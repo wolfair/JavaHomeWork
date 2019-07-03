@@ -8,10 +8,8 @@ import java.nio.file.*;
 
 public class SecondTask {
     public SecondTask() {
-
         System.out.println("\n---------------------");
         System.out.println("Second task solution:\nCheck your project's folder. There should be new file with input provided in code");
-
     }
 
     public static void main(String[] args) throws InvocationTargetException, IllegalAccessException {
@@ -31,7 +29,7 @@ public class SecondTask {
         Files.write(path, textToSave.getBytes());
     }
 
-    @SaveTo(path = "test.txt")
+    @SaveTo(path = "seventh.SecondTask.txt")
     static class TextContainer {
         final String textToSave = "This text should be saved to file.";
     }
